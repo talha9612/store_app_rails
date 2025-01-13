@@ -1,0 +1,20 @@
+# Name of your application. Used to uniquely configure containers.
+service: store
+
+# Name of the container image.
+image: Talha9612/store
+
+# Deploy to these servers.
+servers:
+  web:
+    - 192.168.0.1
+
+# Credentials for your image host.
+registry:
+  # Specify the registry server, if you're not using Docker Hub
+  # server: registry.digitalocean.com / ghcr.io / ...
+  username: Talha9612
+proxy:
+  ssl: true
+  host: app.store.com
+
